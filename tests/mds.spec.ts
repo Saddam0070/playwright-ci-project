@@ -4,7 +4,7 @@ test('test', async ({ page }) => {
   await page.goto('https://demowebshop.tricentis.com/register');
   await page.getByLabel('Male', { exact: true }).check();
   await page.getByLabel('First name:').click();
-  await page.getByLabel('First name:').fill('abc');
+  await page.getByLabel('First name:').fill('abcd');
   await page.getByLabel('Last name:').click();
   await page.getByLabel('Last name:').fill('xyz');
   await page.getByLabel('Email:').click();
