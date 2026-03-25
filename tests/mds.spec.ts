@@ -14,9 +14,9 @@ test('test', async ({ page }) => {
 await page.getByLabel('Email:').fill(randomEmail);
 
   await page.getByLabel('Password:', { exact: true }).click();
-  await page.getByLabel('Password:', { exact: true }).fill('abc@123');
+  await page.getByLabel('Password:', { exact: true }).fill('abcd@123');
   await page.getByLabel('Confirm password:').click();
-  await page.getByLabel('Confirm password:').fill('abc@123');
+  await page.getByLabel('Confirm password:').fill('abcd@123');
   await page.getByRole('button', { name: 'Register' }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
 });
